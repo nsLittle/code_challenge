@@ -26,7 +26,7 @@ const findFrequency = function(array) {
   let keyLeast = "least: ";
   completeAnswer[keyMost] = valueOfMax;
   completeAnswer[keyLeast] = valueOfMin;
-  return completeAnswer;
+  return JSON.stringify(completeAnswer);
 };
 
 const isPalindrome = function(str) {
@@ -55,7 +55,6 @@ const largestPair = function(array) {
 
 const removeParenth = function(str) {
   // your code here - don't forget to return a string!
-  let regex = /( )/;
   let newStr = str.replace(/[()]/g, "");
   return newStr;
 };
