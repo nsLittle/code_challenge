@@ -55,7 +55,7 @@ const largestPair = function(array) {
 
 const removeParenth = function(str) {
   // your code here - don't forget to return a string!
-  let newStr = str.replace(/[()]/g, "");
+  let newStr = str.replace(/\s*[\[{(].*?[)}\]]\s*/g, "");
   return newStr;
 };
 
